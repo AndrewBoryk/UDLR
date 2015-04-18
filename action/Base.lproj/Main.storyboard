@@ -1,13 +1,292 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wMZ-v1-Ojz">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--How To View Controller-->
+        <scene sceneID="7R3-nH-om9">
+            <objects>
+                <viewController id="7cS-uV-l0D" customClass="HowToViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RHM-dr-uDt"/>
+                        <viewControllerLayoutGuide type="bottom" id="had-of-ng2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GY9-KC-TGl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe the direction it tells you." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qB-dk-bkn">
+                                <rect key="frame" x="120" y="225" width="361" height="27"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't take too long." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nb-FB-FzE">
+                                <rect key="frame" x="180" y="287" width="240" height="27"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And that's it. Swipe Up to play." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQu-We-SYa">
+                                <rect key="frame" x="119" y="349" width="363" height="27"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyK-zb-KJF">
+                                <rect key="frame" x="16" y="20" width="568" height="580"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HQu-We-SYa" firstAttribute="top" secondItem="7Nb-FB-FzE" secondAttribute="bottom" constant="35" id="3dL-gI-riv"/>
+                            <constraint firstItem="GyK-zb-KJF" firstAttribute="leading" secondItem="GY9-KC-TGl" secondAttribute="leadingMargin" id="67l-3h-jku"/>
+                            <constraint firstAttribute="centerY" secondItem="7Nb-FB-FzE" secondAttribute="centerY" id="CqE-Ca-gmI"/>
+                            <constraint firstItem="7Nb-FB-FzE" firstAttribute="top" secondItem="7qB-dk-bkn" secondAttribute="bottom" constant="35" id="EEd-OZ-aOs"/>
+                            <constraint firstAttribute="centerX" secondItem="HQu-We-SYa" secondAttribute="centerX" id="NMm-gW-bNE"/>
+                            <constraint firstAttribute="centerX" secondItem="7Nb-FB-FzE" secondAttribute="centerX" id="RaJ-RH-g4U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GyK-zb-KJF" secondAttribute="trailing" id="avi-X8-hH2"/>
+                            <constraint firstItem="had-of-ng2" firstAttribute="top" secondItem="GyK-zb-KJF" secondAttribute="bottom" id="dzh-Ig-qfM"/>
+                            <constraint firstItem="GyK-zb-KJF" firstAttribute="top" secondItem="RHM-dr-uDt" secondAttribute="bottom" id="jbD-an-z57"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7qB-dk-bkn" secondAttribute="trailing" constant="31" id="qgr-Bv-EvG"/>
+                            <constraint firstAttribute="centerX" secondItem="7qB-dk-bkn" secondAttribute="centerX" id="zvE-0N-2NA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qgr-Bv-EvG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="goToPlay" destination="GyK-zb-KJF" id="XXM-RK-2Ps"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="play" modalTransitionStyle="coverVertical" id="pHF-QU-DeU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0YR-Hf-2fn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-251" y="-482"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="2ak-U3-e7O">
+            <objects>
+                <viewController id="wMZ-v1-Ojz" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="40H-Kc-fEH"/>
+                        <viewControllerLayoutGuide type="bottom" id="eUU-uP-yUR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JYq-p7-0zU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GX8-Hf-psI">
+                                <rect key="frame" x="0.0" y="20" width="300" height="290"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="50"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Medals">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cVc-Ua-KnC" kind="presentation" modalTransitionStyle="coverVertical" id="2KY-sD-QcI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mJ-dw-O1i">
+                                <rect key="frame" x="0.0" y="310" width="300" height="290"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="50"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Rules">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7cS-uV-l0D" kind="presentation" modalTransitionStyle="coverVertical" id="aaU-Qm-krX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byt-3z-sbr">
+                                <rect key="frame" x="300" y="20" width="300" height="290"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="50"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" modalTransitionStyle="coverVertical" id="yj9-9W-gjt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjt-mX-Elf">
+                                <rect key="frame" x="300" y="310" width="300" height="290"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="50"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Extras">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VqU-ir-IUx" kind="presentation" id="hsW-Gt-bAn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bjt-mX-Elf" firstAttribute="leading" secondItem="1mJ-dw-O1i" secondAttribute="trailing" id="0JI-yH-mdh"/>
+                            <constraint firstItem="1mJ-dw-O1i" firstAttribute="width" secondItem="bjt-mX-Elf" secondAttribute="width" id="1J6-eE-xdg"/>
+                            <constraint firstItem="1mJ-dw-O1i" firstAttribute="height" secondItem="bjt-mX-Elf" secondAttribute="height" id="MLz-jw-2Kk"/>
+                            <constraint firstAttribute="trailing" secondItem="bjt-mX-Elf" secondAttribute="trailing" id="e4T-g1-LiD"/>
+                            <constraint firstItem="1mJ-dw-O1i" firstAttribute="width" secondItem="Byt-3z-sbr" secondAttribute="width" id="eRG-5A-NUH"/>
+                            <constraint firstItem="1mJ-dw-O1i" firstAttribute="leading" secondItem="JYq-p7-0zU" secondAttribute="leading" id="glt-J6-7nN"/>
+                            <constraint firstItem="bjt-mX-Elf" firstAttribute="top" secondItem="Byt-3z-sbr" secondAttribute="bottom" id="itE-Yc-dpG"/>
+                            <constraint firstItem="1mJ-dw-O1i" firstAttribute="height" secondItem="Byt-3z-sbr" secondAttribute="height" id="jMS-e3-Gky"/>
+                            <constraint firstItem="1mJ-dw-O1i" firstAttribute="height" secondItem="GX8-Hf-psI" secondAttribute="height" id="l4K-N5-nsc"/>
+                            <constraint firstItem="GX8-Hf-psI" firstAttribute="leading" secondItem="JYq-p7-0zU" secondAttribute="leading" id="o0L-6w-oiu"/>
+                            <constraint firstItem="Byt-3z-sbr" firstAttribute="top" secondItem="40H-Kc-fEH" secondAttribute="bottom" id="o2N-uF-7xY"/>
+                            <constraint firstAttribute="trailing" secondItem="Byt-3z-sbr" secondAttribute="trailing" id="p8o-RT-WOx"/>
+                            <constraint firstItem="1mJ-dw-O1i" firstAttribute="width" secondItem="GX8-Hf-psI" secondAttribute="width" id="pxL-tr-4W5"/>
+                            <constraint firstItem="eUU-uP-yUR" firstAttribute="top" secondItem="1mJ-dw-O1i" secondAttribute="bottom" id="vxs-A1-PJX"/>
+                            <constraint firstItem="GX8-Hf-psI" firstAttribute="top" secondItem="40H-Kc-fEH" secondAttribute="bottom" id="wJ3-1E-N69"/>
+                            <constraint firstItem="Byt-3z-sbr" firstAttribute="leading" secondItem="GX8-Hf-psI" secondAttribute="trailing" id="wMa-Bd-fG9"/>
+                            <constraint firstItem="eUU-uP-yUR" firstAttribute="top" secondItem="bjt-mX-Elf" secondAttribute="bottom" id="xyc-TG-OQT"/>
+                            <constraint firstItem="1mJ-dw-O1i" firstAttribute="top" secondItem="GX8-Hf-psI" secondAttribute="bottom" id="zHA-hX-Lcl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFK-CW-LWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-611" y="355"/>
+        </scene>
+        <!--Medal View-->
+        <scene sceneID="Phq-Vz-bPq">
+            <objects>
+                <viewController id="cVc-Ua-KnC" customClass="MedalView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6fu-xX-WCz"/>
+                        <viewControllerLayoutGuide type="bottom" id="frD-R8-JPt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Mj-Y9-m2p">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-bj-szB">
+                                <rect key="frame" x="270" y="556" width="61" height="19"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7y-eb-bqX">
+                                <rect key="frame" x="161" y="30" width="278" height="36"/>
+                                <string key="text">Swipe Left or Right to view Medals
+Swipe Up to go back to Menu</string>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i32-0z-B7H">
+                                <rect key="frame" x="270" y="516" width="61" height="35"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="crv-bI-lqu">
+                                <rect key="frame" x="225" y="200" width="150" height="150"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="EiI-yj-aFv"/>
+                                    <constraint firstAttribute="width" constant="150" id="Fgg-V9-h0d"/>
+                                    <constraint firstAttribute="width" secondItem="crv-bI-lqu" secondAttribute="height" multiplier="1:1" id="y8g-DI-oOJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="y8g-DI-oOJ"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQk-TR-xv7">
+                                <rect key="frame" x="288" y="266" width="24" height="17"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bh-rt-Hbm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="frD-R8-JPt" firstAttribute="top" secondItem="i32-0z-B7H" secondAttribute="bottom" constant="25" id="0IW-WE-rbC"/>
+                            <constraint firstItem="5bh-rt-Hbm" firstAttribute="top" secondItem="Dna-bj-szB" secondAttribute="bottom" constant="-43" id="325-Ea-Ip2"/>
+                            <constraint firstAttribute="centerY" secondItem="crv-bI-lqu" secondAttribute="centerY" constant="25" id="9MH-yw-6Rg"/>
+                            <constraint firstAttribute="centerX" secondItem="Dna-bj-szB" secondAttribute="centerX" id="Cm0-h6-9rl"/>
+                            <constraint firstAttribute="centerX" secondItem="i32-0z-B7H" secondAttribute="centerX" id="Ds6-1U-yIW"/>
+                            <constraint firstItem="crv-bI-lqu" firstAttribute="top" secondItem="y7y-eb-bqX" secondAttribute="bottom" constant="10" id="Epu-t1-Ei6"/>
+                            <constraint firstItem="frD-R8-JPt" firstAttribute="top" secondItem="Dna-bj-szB" secondAttribute="bottom" constant="25" id="LDp-uD-hBi"/>
+                            <constraint firstAttribute="trailing" secondItem="5bh-rt-Hbm" secondAttribute="trailing" id="OUE-sN-11f"/>
+                            <constraint firstItem="Dna-bj-szB" firstAttribute="top" secondItem="i32-0z-B7H" secondAttribute="bottom" constant="5" id="Utu-Df-cgG"/>
+                            <constraint firstAttribute="centerX" secondItem="crv-bI-lqu" secondAttribute="centerX" id="X98-1Y-Koy"/>
+                            <constraint firstAttribute="centerX" secondItem="y7y-eb-bqX" secondAttribute="centerX" id="dAG-wn-bGW"/>
+                            <constraint firstItem="5bh-rt-Hbm" firstAttribute="top" secondItem="6Mj-Y9-m2p" secondAttribute="top" id="f3b-Zs-LyA"/>
+                            <constraint firstItem="i32-0z-B7H" firstAttribute="top" secondItem="crv-bI-lqu" secondAttribute="bottom" constant="10" id="gsU-oR-jkR"/>
+                            <constraint firstItem="Dna-bj-szB" firstAttribute="top" secondItem="5bh-rt-Hbm" secondAttribute="bottom" constant="-60" id="iUJ-g4-CXd"/>
+                            <constraint firstItem="crv-bI-lqu" firstAttribute="centerY" secondItem="ZQk-TR-xv7" secondAttribute="centerY" id="mlv-Fv-eVt"/>
+                            <constraint firstAttribute="bottom" secondItem="5bh-rt-Hbm" secondAttribute="bottom" id="o6k-xW-m7M"/>
+                            <constraint firstItem="crv-bI-lqu" firstAttribute="centerX" secondItem="ZQk-TR-xv7" secondAttribute="centerX" id="pBB-Df-hfe"/>
+                            <constraint firstItem="5bh-rt-Hbm" firstAttribute="leading" secondItem="6Mj-Y9-m2p" secondAttribute="leading" id="sYY-h0-jWj"/>
+                            <constraint firstItem="y7y-eb-bqX" firstAttribute="top" secondItem="6fu-xX-WCz" secondAttribute="bottom" constant="10" id="yoX-ts-EdF"/>
+                            <constraint firstAttribute="centerY" secondItem="Dna-bj-szB" secondAttribute="centerY" id="z0Y-oG-wQ6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="325-Ea-Ip2"/>
+                                <exclude reference="Epu-t1-Ei6"/>
+                                <exclude reference="gsU-oR-jkR"/>
+                                <exclude reference="0IW-WE-rbC"/>
+                                <exclude reference="iUJ-g4-CXd"/>
+                                <exclude reference="z0Y-oG-wQ6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="medalImage" destination="crv-bI-lqu" id="Npp-rZ-Efv"/>
+                        <outlet property="subtitleLabel" destination="Dna-bj-szB" id="Coh-AR-map"/>
+                        <outlet property="swipeCheck" destination="5bh-rt-Hbm" id="fyo-xm-AF6"/>
+                        <outlet property="swipeLabel" destination="y7y-eb-bqX" id="3F2-Yf-mdh"/>
+                        <outlet property="titleLabel" destination="i32-0z-B7H" id="SUG-a8-zAx"/>
+                        <outlet property="yesNoLabel" destination="ZQk-TR-xv7" id="frD-mP-9zd"/>
+                        <segue destination="wMZ-v1-Ojz" kind="presentation" identifier="menu" modalTransitionStyle="coverVertical" id="M9h-hN-dfR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QRR-kP-coF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-165" y="1090"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +294,619 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXS-uK-oKi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="60"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="RESTART">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startOver:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rgO-Sb-cJR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xh3-Nc-WSR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="70"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="SWIPE RIGHT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQX-qf-7z5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="70"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="SWIPE LEFT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfg-w8-1Le">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="70"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="SWIPE UP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGD-8v-jzB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="70"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="ROTATE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-vF-YTT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="70"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="SWIPE DOWN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKP-wv-l9X">
+                                <rect key="frame" x="500" y="20" width="100" height="60"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cYO-47-c0E"/>
+                                    <constraint firstAttribute="width" constant="100" id="qQK-9g-KIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejH-QD-mEA">
+                                <rect key="frame" x="291" y="40" width="19" height="35"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="33"/>
+                                <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2o-Sc-j8c">
+                                <rect key="frame" x="0.0" y="20" width="100" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="uvT-mx-9yO"/>
+                                    <constraint firstAttribute="width" constant="100" id="xrr-fR-cM7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="25"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wMZ-v1-Ojz" kind="presentation" modalTransitionStyle="coverVertical" id="bC4-5N-Fns"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDm-r9-gov">
+                                <rect key="frame" x="256" y="554" width="89" height="26"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="25"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAo-9E-yxz">
+                                <rect key="frame" x="0.0" y="80" width="100" height="520"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qdQ-dw-8ql"/>
+                                    <constraint firstAttribute="width" constant="100" id="vyB-QQ-yTr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="33"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qdQ-dw-8ql"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvZ-Kc-YHi">
+                                <rect key="frame" x="500" y="80" width="100" height="520"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Qev-Eo-Khn"/>
+                                    <constraint firstAttribute="width" constant="100" id="eNW-D1-PR1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="33"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Qev-Eo-Khn"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYK-cv-YJS">
+                                <rect key="frame" x="500" y="540" width="100" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2Eq-u6-qXQ"/>
+                                    <constraint firstAttribute="height" constant="60" id="aGD-Cn-82T"/>
+                                </constraints>
+                                <string key="text">Time
+0.00</string>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1r-uN-1WU">
+                                <rect key="frame" x="0.0" y="525" width="100" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cUI-5i-Ohw"/>
+                                    <constraint firstAttribute="height" constant="75" id="rXM-f4-935"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="25"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Revive">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reviveAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="N46-eF-j1e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-gK-X4b">
+                                <rect key="frame" x="44" y="579" width="13" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DXS-uK-oKi" secondAttribute="bottom" id="1dg-JC-8b9"/>
+                            <constraint firstAttribute="bottom" secondItem="qfg-w8-1Le" secondAttribute="bottom" id="1pr-Mo-Sf5"/>
+                            <constraint firstItem="y1r-uN-1WU" firstAttribute="centerX" secondItem="iAO-gK-X4b" secondAttribute="centerX" id="1xt-MR-7UM"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="PDm-r9-gov" secondAttribute="bottom" constant="20" id="2ab-9g-FsW"/>
+                            <constraint firstAttribute="trailing" secondItem="VGD-8v-jzB" secondAttribute="trailing" id="4mG-Oi-2tQ"/>
+                            <constraint firstItem="VGD-8v-jzB" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="7am-nE-Ee5"/>
+                            <constraint firstItem="ejH-QD-mEA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="8fW-5h-N6w"/>
+                            <constraint firstItem="VAo-9E-yxz" firstAttribute="top" secondItem="E2o-Sc-j8c" secondAttribute="bottom" id="8xk-KM-SGw"/>
+                            <constraint firstItem="QQX-qf-7z5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9i6-M4-J3I"/>
+                            <constraint firstAttribute="bottom" secondItem="VGD-8v-jzB" secondAttribute="bottom" id="9nM-lt-6U7"/>
+                            <constraint firstAttribute="trailing" secondItem="ZYK-cv-YJS" secondAttribute="trailing" id="AC8-5e-D3Y"/>
+                            <constraint firstAttribute="bottom" secondItem="QQX-qf-7z5" secondAttribute="bottom" id="Bpm-yT-Jh9"/>
+                            <constraint firstAttribute="trailing" secondItem="QQX-qf-7z5" secondAttribute="trailing" id="De3-wd-Ybi"/>
+                            <constraint firstAttribute="bottom" secondItem="VAo-9E-yxz" secondAttribute="bottom" id="FD1-Lq-hEe"/>
+                            <constraint firstAttribute="bottom" secondItem="ZYK-cv-YJS" secondAttribute="bottom" id="G9W-gt-aoe"/>
+                            <constraint firstAttribute="bottom" secondItem="y1r-uN-1WU" secondAttribute="bottom" id="KJT-YW-nn0"/>
+                            <constraint firstItem="Xh3-Nc-WSR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="LkJ-LP-7RS"/>
+                            <constraint firstAttribute="bottom" secondItem="Xh3-Nc-WSR" secondAttribute="bottom" id="Loq-Er-tQZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ALo-vF-YTT" secondAttribute="bottom" id="M62-gJ-oLb"/>
+                            <constraint firstItem="E2o-Sc-j8c" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Mah-0y-qFm"/>
+                            <constraint firstItem="qfg-w8-1Le" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="MjO-Jr-HcB"/>
+                            <constraint firstItem="qfg-w8-1Le" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="NId-vq-Dcp"/>
+                            <constraint firstItem="E2o-Sc-j8c" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="NlG-kJ-Jaw"/>
+                            <constraint firstAttribute="trailing" secondItem="DXS-uK-oKi" secondAttribute="trailing" id="O53-i2-Le8"/>
+                            <constraint firstItem="DXS-uK-oKi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Sgp-fm-nMW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RKP-wv-l9X" secondAttribute="trailing" constant="15" id="TLc-dS-Rfj"/>
+                            <constraint firstAttribute="trailing" secondItem="vvZ-Kc-YHi" secondAttribute="trailing" id="Vma-PY-es8"/>
+                            <constraint firstItem="DXS-uK-oKi" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="YjB-D1-H4B"/>
+                            <constraint firstAttribute="centerX" secondItem="PDm-r9-gov" secondAttribute="centerX" id="a0i-2R-kn0"/>
+                            <constraint firstAttribute="bottom" secondItem="vvZ-Kc-YHi" secondAttribute="bottom" id="aHw-bM-x33"/>
+                            <constraint firstItem="QQX-qf-7z5" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="bIH-nW-tLV"/>
+                            <constraint firstItem="vvZ-Kc-YHi" firstAttribute="top" secondItem="RKP-wv-l9X" secondAttribute="bottom" id="cSl-tA-pft"/>
+                            <constraint firstItem="ALo-vF-YTT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ewu-RF-Syc"/>
+                            <constraint firstItem="E2o-Sc-j8c" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="mew-ES-85R"/>
+                            <constraint firstAttribute="trailing" secondItem="RKP-wv-l9X" secondAttribute="trailing" id="nK6-7F-fvr"/>
+                            <constraint firstAttribute="trailing" secondItem="Xh3-Nc-WSR" secondAttribute="trailing" id="oRd-Ra-57t"/>
+                            <constraint firstItem="Xh3-Nc-WSR" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="or3-Zj-49m"/>
+                            <constraint firstItem="ALo-vF-YTT" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="pBQ-J6-kZM"/>
+                            <constraint firstItem="y1r-uN-1WU" firstAttribute="bottom" secondItem="iAO-gK-X4b" secondAttribute="bottom" id="r2Y-9J-2FZ"/>
+                            <constraint firstItem="y1r-uN-1WU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="sLj-Xc-vgq"/>
+                            <constraint firstItem="VGD-8v-jzB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="shn-lf-3pJ"/>
+                            <constraint firstAttribute="trailing" secondItem="qfg-w8-1Le" secondAttribute="trailing" id="sjz-ds-jB4"/>
+                            <constraint firstAttribute="trailing" secondItem="ALo-vF-YTT" secondAttribute="trailing" id="tz0-Wb-CiT"/>
+                            <constraint firstItem="VAo-9E-yxz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="xtK-x4-zaD"/>
+                            <constraint firstAttribute="centerX" secondItem="ejH-QD-mEA" secondAttribute="centerX" id="z3P-c7-ndF"/>
+                            <constraint firstItem="RKP-wv-l9X" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="zqi-tw-BkH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mew-ES-85R"/>
+                                <exclude reference="TLc-dS-Rfj"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="E2o-Sc-j8c" id="EF4-Ky-5oF"/>
+                        <outlet property="bottomLeft" destination="VAo-9E-yxz" id="aw1-YZ-6W3"/>
+                        <outlet property="bottomRight" destination="vvZ-Kc-YHi" id="Njl-sg-9Ff"/>
+                        <outlet property="highLabel" destination="ejH-QD-mEA" id="Vi9-8Z-D3D"/>
+                        <outlet property="reviveButton" destination="y1r-uN-1WU" id="bhv-92-FDD"/>
+                        <outlet property="reviveNum" destination="iAO-gK-X4b" id="pLT-xb-fec"/>
+                        <outlet property="rotate" destination="VGD-8v-jzB" id="UDB-sA-djb"/>
+                        <outlet property="score" destination="RKP-wv-l9X" id="vls-Wh-xAi"/>
+                        <outlet property="startOverButton" destination="DXS-uK-oKi" id="Y5m-WM-2Uc"/>
+                        <outlet property="subtitle" destination="PDm-r9-gov" id="DkE-BI-Xps"/>
+                        <outlet property="swipeDown" destination="ALo-vF-YTT" id="5rs-xx-Fz4"/>
+                        <outlet property="swipeLeft" destination="QQX-qf-7z5" id="Dvh-GW-U7y"/>
+                        <outlet property="swipeRight" destination="Xh3-Nc-WSR" id="huf-1A-TZw"/>
+                        <outlet property="swipeUp" destination="qfg-w8-1Le" id="mIc-Uj-wt8"/>
+                        <outlet property="timeLabel" destination="ZYK-cv-YJS" id="aEn-fg-lDf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="rHq-Lu-3bD"/>
             </objects>
+            <point key="canvasLocation" x="169" y="308"/>
+        </scene>
+        <!--Extras View Controller-->
+        <scene sceneID="dCX-JK-k1R">
+            <objects>
+                <viewController id="VqU-ir-IUx" customClass="ExtrasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8xY-SI-8Ay"/>
+                        <viewControllerLayoutGuide type="bottom" id="H0D-hj-j5N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vBy-YY-oZA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVv-tE-JXa">
+                                <rect key="frame" x="0.0" y="20" width="300" height="290"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="50"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Ads: On">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="adAction:" destination="VqU-ir-IUx" eventType="touchUpInside" id="7MQ-Bx-I8J"/>
+                                    <segue destination="0dJ-RW-ICd" kind="presentation" id="1yf-rC-kRk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pf-eB-JNE">
+                                <rect key="frame" x="0.0" y="310" width="300" height="290"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="50"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Sounds">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="orangeAction:" destination="VqU-ir-IUx" eventType="touchUpInside" id="tYV-ob-yOe"/>
+                                    <segue destination="uQ4-1O-3CB" kind="presentation" id="tw8-pE-d9W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxI-lm-5Uz">
+                                <rect key="frame" x="300" y="20" width="300" height="290"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="50"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Revives">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reviveAction:" destination="VqU-ir-IUx" eventType="touchUpInside" id="Ph0-FD-Xmw"/>
+                                    <segue destination="0dJ-RW-ICd" kind="presentation" id="ctS-zT-lCs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYF-gW-rEp">
+                                <rect key="frame" x="300" y="310" width="300" height="290"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="50"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purpleAction:" destination="VqU-ir-IUx" eventType="touchUpInside" id="G2M-Eu-bIP"/>
+                                    <segue destination="wMZ-v1-Ojz" kind="presentation" id="WRn-xn-kga"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H0D-hj-j5N" firstAttribute="top" secondItem="qYF-gW-rEp" secondAttribute="bottom" id="4dH-3p-Via"/>
+                            <constraint firstItem="6pf-eB-JNE" firstAttribute="leading" secondItem="vBy-YY-oZA" secondAttribute="leading" id="8le-El-tqm"/>
+                            <constraint firstItem="6pf-eB-JNE" firstAttribute="height" secondItem="SxI-lm-5Uz" secondAttribute="height" id="BNg-V5-UdL"/>
+                            <constraint firstItem="6pf-eB-JNE" firstAttribute="height" secondItem="TVv-tE-JXa" secondAttribute="height" id="Eza-95-UH0"/>
+                            <constraint firstItem="TVv-tE-JXa" firstAttribute="top" secondItem="8xY-SI-8Ay" secondAttribute="bottom" id="HOv-vN-gbZ"/>
+                            <constraint firstAttribute="trailing" secondItem="SxI-lm-5Uz" secondAttribute="trailing" id="X3I-VD-H6g"/>
+                            <constraint firstItem="SxI-lm-5Uz" firstAttribute="top" secondItem="8xY-SI-8Ay" secondAttribute="bottom" id="bom-Hw-YNs"/>
+                            <constraint firstItem="6pf-eB-JNE" firstAttribute="width" secondItem="SxI-lm-5Uz" secondAttribute="width" id="bpr-Hk-huD"/>
+                            <constraint firstItem="qYF-gW-rEp" firstAttribute="top" secondItem="SxI-lm-5Uz" secondAttribute="bottom" id="cqD-P9-peU"/>
+                            <constraint firstItem="H0D-hj-j5N" firstAttribute="top" secondItem="6pf-eB-JNE" secondAttribute="bottom" id="iSf-kd-BMH"/>
+                            <constraint firstItem="6pf-eB-JNE" firstAttribute="width" secondItem="qYF-gW-rEp" secondAttribute="width" id="j8X-GK-aeo"/>
+                            <constraint firstItem="6pf-eB-JNE" firstAttribute="top" secondItem="TVv-tE-JXa" secondAttribute="bottom" id="lCa-HF-jP4"/>
+                            <constraint firstItem="6pf-eB-JNE" firstAttribute="width" secondItem="TVv-tE-JXa" secondAttribute="width" id="mOo-sE-T7z"/>
+                            <constraint firstItem="qYF-gW-rEp" firstAttribute="leading" secondItem="6pf-eB-JNE" secondAttribute="trailing" id="pHh-ao-r3Y"/>
+                            <constraint firstAttribute="trailing" secondItem="qYF-gW-rEp" secondAttribute="trailing" id="qQ2-4a-19D"/>
+                            <constraint firstItem="SxI-lm-5Uz" firstAttribute="leading" secondItem="TVv-tE-JXa" secondAttribute="trailing" id="u1e-TW-tOA"/>
+                            <constraint firstItem="6pf-eB-JNE" firstAttribute="height" secondItem="qYF-gW-rEp" secondAttribute="height" id="wTe-US-ojS"/>
+                            <constraint firstItem="TVv-tE-JXa" firstAttribute="leading" secondItem="vBy-YY-oZA" secondAttribute="leading" id="yrC-of-zZO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adButton" destination="TVv-tE-JXa" id="kgZ-PF-Y8u"/>
+                        <outlet property="orangeButton" destination="6pf-eB-JNE" id="La6-QS-gpJ"/>
+                        <outlet property="purpleButton" destination="qYF-gW-rEp" id="h5C-eb-pGt"/>
+                        <outlet property="reviveButton" destination="SxI-lm-5Uz" id="7We-Nj-HnV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATb-Q0-vvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662" y="1733"/>
+        </scene>
+        <!--Extras View Controller-->
+        <scene sceneID="yNi-N3-wZ5">
+            <objects>
+                <viewController id="0dJ-RW-ICd" customClass="ExtrasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="99m-ne-65Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="1lB-98-fF4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jt2-Bo-JU5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybN-r7-8uA">
+                                <rect key="frame" x="300" y="525" width="300" height="75"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.70980392160000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="PSg-bZ-HMx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="33"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAction:" destination="0dJ-RW-ICd" eventType="touchUpInside" id="cgi-NV-eHp"/>
+                                    <segue destination="VqU-ir-IUx" kind="presentation" id="zet-tf-3nC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1Q-gn-UZL">
+                                <rect key="frame" x="0.0" y="525" width="300" height="75"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.70980392160000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Ahi-OJ-2sZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="34"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmAction:" destination="0dJ-RW-ICd" eventType="touchUpInside" id="N9N-KZ-Kgr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase Revives" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kt-Zm-hbK">
+                                <rect key="frame" x="133" y="70" width="335" height="42"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghg-4G-anF">
+                                <rect key="frame" x="16" y="137" width="568" height="29"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWF-N7-vDl">
+                                <rect key="frame" x="435" y="20" width="149" height="29"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Restore Purchases">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.14148353820000001" green="0.14465647670000001" blue="0.1585028108" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restoreAction:" destination="0dJ-RW-ICd" eventType="touchUpInside" id="Gow-uY-HU7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1lB-98-fF4" firstAttribute="top" secondItem="s1Q-gn-UZL" secondAttribute="bottom" id="1yQ-ek-2bv"/>
+                            <constraint firstItem="7kt-Zm-hbK" firstAttribute="top" secondItem="99m-ne-65Y" secondAttribute="bottom" constant="50" id="335-3J-ezT"/>
+                            <constraint firstItem="VWF-N7-vDl" firstAttribute="trailing" secondItem="Jt2-Bo-JU5" secondAttribute="trailingMargin" id="4xV-0h-8jP"/>
+                            <constraint firstItem="Ghg-4G-anF" firstAttribute="leading" secondItem="Jt2-Bo-JU5" secondAttribute="leadingMargin" id="6mp-N9-kDk"/>
+                            <constraint firstItem="s1Q-gn-UZL" firstAttribute="height" secondItem="ybN-r7-8uA" secondAttribute="height" id="8uO-v4-Ado"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ghg-4G-anF" secondAttribute="trailing" id="G6i-kV-Yus"/>
+                            <constraint firstItem="1lB-98-fF4" firstAttribute="top" secondItem="ybN-r7-8uA" secondAttribute="bottom" id="ItU-hd-kW2"/>
+                            <constraint firstItem="Ghg-4G-anF" firstAttribute="top" secondItem="7kt-Zm-hbK" secondAttribute="bottom" constant="25" id="Kpt-p2-L7M"/>
+                            <constraint firstAttribute="centerX" secondItem="Ghg-4G-anF" secondAttribute="centerX" id="QHB-Tl-mUb"/>
+                            <constraint firstItem="ybN-r7-8uA" firstAttribute="leading" secondItem="s1Q-gn-UZL" secondAttribute="trailing" id="SsY-7C-gUH"/>
+                            <constraint firstItem="s1Q-gn-UZL" firstAttribute="leading" secondItem="Jt2-Bo-JU5" secondAttribute="leading" id="TRe-EY-Hqp"/>
+                            <constraint firstAttribute="centerX" secondItem="7kt-Zm-hbK" secondAttribute="centerX" id="dj4-Ow-PQb"/>
+                            <constraint firstItem="VWF-N7-vDl" firstAttribute="top" secondItem="99m-ne-65Y" secondAttribute="bottom" id="dqa-Af-CfH"/>
+                            <constraint firstAttribute="trailing" secondItem="ybN-r7-8uA" secondAttribute="trailing" id="sD9-e2-POH"/>
+                            <constraint firstItem="s1Q-gn-UZL" firstAttribute="width" secondItem="ybN-r7-8uA" secondAttribute="width" id="zE0-KG-zpg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="ybN-r7-8uA" id="NP9-MQ-Vdt"/>
+                        <outlet property="confirmButton" destination="s1Q-gn-UZL" id="4Xu-VF-HQV"/>
+                        <outlet property="restoreButton" destination="VWF-N7-vDl" id="uBP-Bw-4xd"/>
+                        <outlet property="subtitlePurch" destination="Ghg-4G-anF" id="hD1-MV-5Zh"/>
+                        <outlet property="titlePurch" destination="7kt-Zm-hbK" id="uHe-F0-qjn"/>
+                        <segue destination="VqU-ir-IUx" kind="presentation" identifier="return" id="zNr-yf-V5W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ly-II-Cjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-493" y="2528"/>
+        </scene>
+        <!--Extras View Controller-->
+        <scene sceneID="MX8-bZ-xkm">
+            <objects>
+                <viewController id="uQ4-1O-3CB" customClass="ExtrasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4ML-Gh-4EF"/>
+                        <viewControllerLayoutGuide type="bottom" id="et9-ao-GcP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rFs-J4-mq9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vk6-Sn-aUa">
+                                <rect key="frame" x="0.0" y="20" width="300" height="290"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="25"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Horizontal Swipes">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="redWeapon:" destination="uQ4-1O-3CB" eventType="touchUpInside" id="LtC-yf-GSP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G92-fh-Ju3">
+                                <rect key="frame" x="0.0" y="310" width="300" height="290"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="25"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="You Lose">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alienLink:" destination="uQ4-1O-3CB" eventType="touchUpInside" id="7v2-PM-TJe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXl-xb-VeL">
+                                <rect key="frame" x="300" y="20" width="300" height="290"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="25"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Vertical Swipes">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="swishLink:" destination="uQ4-1O-3CB" eventType="touchUpInside" id="qIV-6L-F4C"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(c) 2009 ra_gun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBd-pe-36y">
+                                <rect key="frame" x="393" y="278" width="114" height="17"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyh-CG-t2f">
+                                <rect key="frame" x="300" y="310" width="300" height="290"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="50"/>
+                                <size key="titleShadowOffset" width="-1" height="2"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VqU-ir-IUx" kind="presentation" id="Hwa-kB-ua9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(c) 2014 Yap_Audio_Production" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlh-DI-MMp">
+                                <rect key="frame" x="35" y="278" width="230" height="17"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(c) 2009 AlienXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dS-h4-HnA">
+                                <rect key="frame" x="87" y="568" width="126" height="17"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="-1" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G92-fh-Ju3" firstAttribute="height" secondItem="xXl-xb-VeL" secondAttribute="height" id="446-SA-Yuw"/>
+                            <constraint firstItem="G92-fh-Ju3" firstAttribute="width" secondItem="xXl-xb-VeL" secondAttribute="width" id="79q-N9-0UJ"/>
+                            <constraint firstItem="et9-ao-GcP" firstAttribute="top" secondItem="lyh-CG-t2f" secondAttribute="bottom" id="DXu-8y-RrP"/>
+                            <constraint firstItem="G92-fh-Ju3" firstAttribute="width" secondItem="lyh-CG-t2f" secondAttribute="width" id="FIa-Dz-Ykv"/>
+                            <constraint firstItem="xXl-xb-VeL" firstAttribute="leading" secondItem="Vk6-Sn-aUa" secondAttribute="trailing" id="Fat-OA-4Ez"/>
+                            <constraint firstItem="Vk6-Sn-aUa" firstAttribute="top" secondItem="4ML-Gh-4EF" secondAttribute="bottom" id="IEu-g0-p3f"/>
+                            <constraint firstItem="G92-fh-Ju3" firstAttribute="height" secondItem="lyh-CG-t2f" secondAttribute="height" id="KoL-1s-r5R"/>
+                            <constraint firstItem="xXl-xb-VeL" firstAttribute="top" secondItem="BBd-pe-36y" secondAttribute="bottom" id="LMf-Tx-O5S"/>
+                            <constraint firstItem="G92-fh-Ju3" firstAttribute="centerX" secondItem="5dS-h4-HnA" secondAttribute="centerX" id="Mtb-6b-7dk"/>
+                            <constraint firstAttribute="trailing" secondItem="lyh-CG-t2f" secondAttribute="trailing" id="N28-AP-Qnd"/>
+                            <constraint firstItem="G92-fh-Ju3" firstAttribute="leading" secondItem="rFs-J4-mq9" secondAttribute="leading" id="Shq-Lw-R54"/>
+                            <constraint firstItem="5dS-h4-HnA" firstAttribute="bottom" secondItem="G92-fh-Ju3" secondAttribute="bottom" constant="-15" id="TSC-5i-Hry"/>
+                            <constraint firstItem="jlh-DI-MMp" firstAttribute="bottom" secondItem="Vk6-Sn-aUa" secondAttribute="bottom" constant="-15" id="Tum-dA-7aV"/>
+                            <constraint firstItem="BBd-pe-36y" firstAttribute="bottom" secondItem="xXl-xb-VeL" secondAttribute="bottom" constant="-15" id="UYJ-9f-0ft"/>
+                            <constraint firstItem="Vk6-Sn-aUa" firstAttribute="leading" secondItem="rFs-J4-mq9" secondAttribute="leading" id="V6u-4M-MzZ"/>
+                            <constraint firstItem="BBd-pe-36y" firstAttribute="centerX" secondItem="xXl-xb-VeL" secondAttribute="centerX" id="Zk1-KR-dxh"/>
+                            <constraint firstItem="lyh-CG-t2f" firstAttribute="leading" secondItem="G92-fh-Ju3" secondAttribute="trailing" id="cns-I6-bIy"/>
+                            <constraint firstAttribute="trailing" secondItem="xXl-xb-VeL" secondAttribute="trailing" id="dc8-va-Jji"/>
+                            <constraint firstItem="G92-fh-Ju3" firstAttribute="top" secondItem="Vk6-Sn-aUa" secondAttribute="bottom" id="eZM-8o-jNL"/>
+                            <constraint firstItem="et9-ao-GcP" firstAttribute="top" secondItem="G92-fh-Ju3" secondAttribute="bottom" id="l7k-a9-Pyt"/>
+                            <constraint firstItem="G92-fh-Ju3" firstAttribute="width" secondItem="Vk6-Sn-aUa" secondAttribute="width" id="nYc-1c-ZwU"/>
+                            <constraint firstItem="xXl-xb-VeL" firstAttribute="top" secondItem="4ML-Gh-4EF" secondAttribute="bottom" id="s5T-nb-v8h"/>
+                            <constraint firstItem="G92-fh-Ju3" firstAttribute="height" secondItem="Vk6-Sn-aUa" secondAttribute="height" id="szb-An-E0s"/>
+                            <constraint firstItem="Vk6-Sn-aUa" firstAttribute="centerX" secondItem="jlh-DI-MMp" secondAttribute="centerX" id="tW3-jo-K0z"/>
+                            <constraint firstItem="lyh-CG-t2f" firstAttribute="top" secondItem="xXl-xb-VeL" secondAttribute="bottom" id="vwr-D2-XPu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LMf-Tx-O5S"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9e-FH-NhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1189" y="2434"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="zNr-yf-V5W"/>
+        <segue reference="ctS-zT-lCs"/>
+        <segue reference="WRn-xn-kga"/>
+        <segue reference="yj9-9W-gjt"/>
+    </inferredMetricsTieBreakers>
 </document>
